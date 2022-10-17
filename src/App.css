@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.gamecontent{
+  background-color: bisque;
+  width: 500px;
+  border-radius: 20px;
+}
+ul{
+  gap:20px;
+  display: flex;
+  flex-direction: column;
+}
+li{
+  margin-right: 35px;
+  list-style: none;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: azure;
+}
+.result{
+  border-radius: 20px;
+  width: 500px;
+  background-color: rgba(182, 142, 220, 0.766);
+  display: grid;
+  place-items: center;
+}
+.result .snovo{
+  width: 159px;
+  font-size: 23px;
+  border-radius: 10px;
+  color: rgba(61, 51, 71, 0.766);
+  background-color: rgb(244, 232, 218);
+  box-shadow: 2px 2px ;
+}
+.result .snovo:hover{
+  box-shadow: 0px 0px ;
+  color: rgb(27, 27, 4);
+  cursor: pointer;
+}
+.prossent{
+  height: 5px;
+  background-color: blue;
+  width: 500px;
+  border-radius: 20px;
+}
