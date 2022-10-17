@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-
 const guestions = [
   {
     title:'React - это ... ?',
@@ -9,12 +8,12 @@ const guestions = [
   },
    {
     title:'Component - это ... ?',
-    variants: ['библиотека','JSX',"приложение"],
+    variants: ['Библиотека','JSX',"Приложение"],
     correct: 1,
   }, 
   {
-    title:'props - это ... ?',
-    variants: ['приложение','hook',"фреймворк"],
+    title:'useState - это ... ?',
+    variants: ['Приложение','Hook',"Фреймворк"],
     correct: 1,
   }
 ]
@@ -41,9 +40,9 @@ function Result({carrect}) {
   return (
     <div className='result'>
       <h1>молодец</h1>
+      <img src='https://orig04.deviantart.net/17c8/f/2013/179/0/2/two_flowers_by_luisbc-d6b2bcs.gif'/>
       <h3>из {guestions.length} правильный {carrect}</h3>
       <a href='/'>
-
       <h1 className='snovo'>повторит</h1>
       </a>
     </div>
@@ -62,15 +61,17 @@ function App() {
       }
   }
   return (
+   
     <div className="App">
       {
         step !== guestions.length ? (
           <Game step={step} perseg={perseg} guestion={guestion}/>
-        ):(
-
-          <Result carrect={carrect}/>
-        )
-      }
+          ):(
+            
+            <Result carrect={carrect}/>
+            )
+          }
+          
     </div>
   );
 }
