@@ -39,7 +39,7 @@ function Game({guestion,perseg,step}) {
 function Result({carrect}) {
   return (
     <div className='result'>
-      <h1>молодец</h1>
+      <h1>Mолодец</h1>
       <img src='https://orig04.deviantart.net/17c8/f/2013/179/0/2/two_flowers_by_luisbc-d6b2bcs.gif'/>
       <h3>из {guestions.length} правильный {carrect}</h3>
       <a href='/'>
